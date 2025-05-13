@@ -25,6 +25,6 @@ alert("Welcome to Rob’s rentals!");
  function seats () {
 let choice = prompt("Hi " + userName + ".\nHow many seats do you need in your car?");
   let array =["BAC Mono, MX5, Mini,Falcon, Outlander, Estima"];
-  console.log(choice);
+  alert( "I think you might be interested in buying" + array[choice]);
  }
  
