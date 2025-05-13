@@ -5,11 +5,13 @@ Written by Priya Silwal
  Purpose: Part 1 project
  *******************/
 
+let userName;
 
  function start () {
     userName = askUserName();
  }
 
+ askUserName();
 
   function askUserName ()  {
 alert("Welcome to Rob’s rentals!");
