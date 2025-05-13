@@ -6,9 +6,13 @@ Written by Priya Silwal
  *******************/
 
 let userName;
+let cost =0;
+let days = ["1,2,3,4,5,6,7,8,9,10"];
+let array =["BAC Mono, MX5, Mini,Falcon, Outlander, Estima"];
 
  function start () {
     userName = askUserName();
+    choice = seats();
  }
 
  askUserName();
@@ -16,40 +20,11 @@ let userName;
   function askUserName ()  {
 alert("Welcome to Rob’s rentals!");
   userName = prompt("What is your name?");
-  alert("Hi " + userName +" =!");
-  let choice = prompt("Hi " + userName + ".\nHow many seats do you need in your car?");
-  let array =["BAC Mono, MX5, Mini,Falcon, Outlander, Estima"];
  }
 
- //Variables//
-userName = prompt("What is your name?");
-alert("Hi " + userName+".");
-let days = ["1,2,3,4,5,6,7,8,9,10"];
-let cost =0;
+ function seats () {
 let choice = prompt("Hi " + userName + ".\nHow many seats do you need in your car?");
-let array =["BAC Mono, MX5, Mini,Falcon, Outlander, Estima"];
-
-
-
- /******* function askUserAge () {
-    userAge = Number(prompt("What is your age?"));
+  let array =["BAC Mono, MX5, Mini,Falcon, Outlander, Estima"];
+  console.log(choice);
  }
-
- function askUserMoney  ()  {
-    money = Number(prompt("How much pocket money they have?"));
-    alert("You have "+ money+ " dollars."); 
-  if (money >= 20){
-    alert("You can afford a chocolate bar");
-  }
- else {
-    alert("You can't afford a chocolate bar");
- }
- }
-
-/**********
-  Main Code
-***********/
-
- 
-
  
