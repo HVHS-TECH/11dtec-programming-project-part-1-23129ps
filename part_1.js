@@ -11,7 +11,7 @@ userName = prompt("What is your name?");
 alert("Hi " + userName+".");
 let days = ["1,2,3,4,5,6,7,8,9,10"];
 let cost =0;
-let choice= prompt("Hi " + userName +"." n "How many seats do you need in your car?");
+let choice = prompt("Hi " + userName + ".\nHow many seats do you need in your car?");
 let array =["BAC Mono, MX5, Mini,Falcon, Outlander, Estima"];
 
 
