@@ -4,7 +4,20 @@ Written by Priya Silwal
  Written in 13/05/2025
  Purpose: Part 1 project
  *******************/
+
+
+ function start () {
+    userName = askUserName();
+ }
+
+
+  function askUserName ()  {
 alert("Welcome to Rob’s rentals!");
+  userName = prompt("What is your name?");
+  alert("Hi " + userName +" =!");
+  let choice = prompt("Hi " + userName + ".\nHow many seats do you need in your car?");
+  let array =["BAC Mono, MX5, Mini,Falcon, Outlander, Estima"];
+ }
 
  //Variables//
 userName = prompt("What is your name?");
