@@ -8,7 +8,7 @@ Written by Priya Silwal
 let userName;
 let cost =0;
 let days = ["1,2,3,4,5,6,7,8,9,10"];
-let array =["BAC Mono",  "MX5" , "Mini", "Falcon", "Outlander", "Estima"];
+let array =["N/A", "BAC Mono",  "MX5" , "Mini", "Falcon", "Outlander", "Estima"];
 
  function start () {
     rental();
