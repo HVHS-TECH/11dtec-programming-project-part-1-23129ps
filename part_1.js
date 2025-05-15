@@ -20,7 +20,7 @@ alert("Welcome to Rob’s rentals!");
   let choice = prompt("Hi " + userName + ".\nHow many seats do you need in your car?");
   alert( "I think you might be interested in buying " + array[choice]);
    days = prompt("For how long do you want to rent the car?");
-   prompt("You have rented " + array[choice] + " for " + days + "days\n Your total cost is" + days * choice);
+   prompt("You have rented " + array[choice] + " for " + days + " days\n Your total cost is" + days * choice);
  }
 
  
