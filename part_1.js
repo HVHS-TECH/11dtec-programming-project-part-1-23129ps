@@ -21,10 +21,10 @@ alert("Welcome to Rob’s rentals!");
   alert( "I think you might be interested in buying " + array[choice] + ".");
    days = prompt("For how long do you want to rent the car?");
    if (days = 1) {
-      prompt("You have rented " + array[choice] + " for " + days + " day.\n Your total cost is $" + days * choice + ".");
+      prompt("You have rented " + array[choice] + " for " + days + " day.\n Your total cost is $" + days * choice + ".")
    }
    else {
-      prompt("You have rented " + array[choice] + " for " + days + " days.\n Your total cost is $" + days * choice + ".");
+      prompt("You have rented " + array[choice] + " for " + days + " days.\n Your total cost is $" + days * choice + ".")
    }
  }
 
