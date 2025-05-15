@@ -5,14 +5,19 @@ Written by Priya Silwal
  Purpose: Part 1 project
  *******************/
 
+//variables///
+
 let userName;
 let cost =0;
 let days;
 let array =["N/A", "BAC Mono",  "MX5" , "Mini", "Falcon", "Outlander", "Estima"];
 
+//functions///
+
  function start () {
     rental();
  }
+
   function rental ()  {
 alert("Welcome to Rob’s rentals!");
    userName = prompt("What is your name?");
