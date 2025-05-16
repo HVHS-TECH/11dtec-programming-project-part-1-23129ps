@@ -35,8 +35,8 @@ let array =["N/A", "BAC Mono",  "MX5" , "Mini", "Falcon", "Outlander", "Estima"]
    rentalDays = prompt("For how long do you want to rent the car?");
   }
 
-  function details () {
-   prompt("You have rented " + array[choice] + " for " + days + " day.\n Your total cost is $" + rentDays * choice + ".");
-  }
+  function details() {
+   prompt("You have rented " + array[choice] + " for " + rentDays + " days.\nYour total cost is $" + (rentDays * choice) + ".");
+}
  
  
