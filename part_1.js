@@ -8,7 +8,7 @@ Written by Priya Silwal
 //variables///
 
 let userName;
-let rentDays;
+let rentalDays;
 let choice;
 let array =["N/A", "BAC Mono",  "MX5" , "Mini", "Falcon", "Outlander", "Estima"];
 
@@ -36,7 +36,7 @@ let array =["N/A", "BAC Mono",  "MX5" , "Mini", "Falcon", "Outlander", "Estima"]
   }
 
   function details() {
-   prompt("You have rented " + array[choice] + " for " + rentDays + " days.\nYour total cost is $" + (rentDays * choice) + ".");
+   prompt("You have rented " + array[choice] + " for " + rentalDays + " days.\nYour total cost is $" + (rentDays * choice) + ".");
 }
  
  
