@@ -1,8 +1,8 @@
-/* Part 1 Project CSS 
+/*******************
+  Part 1 Project CSS 
    Author: Priya Silwal
-   Date: 13/05/2025
-   Purpose: Styling Rob’s rentals
-*/
+   Date: 19/05/2025
+*******************/
 
 /* General Styles */
 body {
@@ -14,12 +14,12 @@ body {
     text-align: center;
 }
 
-/* Header */
+/* Heading */
 h1 {
     color: #333;
 }
 
-/* Buttons */
+/* Button */
 button {
     background-color: #007bff;
     font-size: 20px;
@@ -34,9 +34,4 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Alerts */
-.alert {
-    font-size: 18px;
-    font-weight: bold;
-    color: #d9534f;
-}
+
