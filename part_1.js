@@ -41,7 +41,7 @@ let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", 
 
   //Display rental details with cost//
   function details() {
-   alert("So, "+ userName+" have rented " + array[choice] + " for " + rentalDays + " days.\nYour total cost is $" + (rentalDays * choice) + ".");
+   alert("So, "+ userName+" have rented " + array[choice] + " for " + rentalDays + " days.\nYour total cost is $" + (rentalDays * choice * 10) + ".");
 }
  
  
