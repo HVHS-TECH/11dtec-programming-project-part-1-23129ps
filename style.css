@@ -1,9 +1,50 @@
-h1 {
-    font-size: 4em;
-    margin-left: 18.5cm;
+/* Part 1 Project CSS 
+   Author: Priya Silwal
+   Date: 13/05/2025
+   Purpose: Styling Rob’s rentals
+*/
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-p, button {
-    font-size: 20px;
-    margin-left: 18.5cm;
+/* Header */
+h1 {
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Alerts */
+.alert {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d9534f;
 }
