@@ -10,7 +10,7 @@ Written by Priya Silwal
 let userName;
 let rentalDays;
 let choice;
-let array =["N/A", "BAC Mono",  "MX5" , "Mini", "Falcon", "Outlander", "Estima"];
+let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", "Honda CR-V", "Chevrolet Suburban"];
 
 //functions///
 
