@@ -7,10 +7,12 @@ Written by Priya Silwal
 
 //Variables//
 
+const array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", "Honda CR-V", "Chevrolet Suburban", "Mercedes-Benz Sprinter", "Ford Transit", "Toyota HiAce"];
+
 let userName;
 let rentalDays;
-let choice;
-let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", "Honda CR-V", "Chevrolet Suburban", "Mercedes-Benz Sprinter", "Ford Transit", "Toyota HiAce"];
+let numberOfSeats;
+let carPrice;
 
 //functions//
 
@@ -35,23 +37,27 @@ let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", 
  
   //Asks for number of seates needed and suggests a car//
   function car () {
-  choice = prompt("Hi " + userName + "!\nHow many seats do you need in your car?");
-     while (choice == null || choice.trim() === "" || isNaN(choice) || choice==0) {
-        choice = prompt("Invalid input. Please enter a valid age.");
+  numberOfSeats = prompt("Hi " + userName + "!\nHow many seats do you need in your car?");
+     while (numberOfSeats == null || numberOfSeats.trim() === "" || isNaN(numberOfSeats) || numberOfSeats<=0) {
+        numberOfSeats = prompt("Invalid input. Please enter a valid input.");
   }
-      alert( "I think you might be interested in buying " + array[choice] + ".");
+   if (numberOfSeats>9) {
+    alert("Sorry, we don't have a car more than 9 seats");
+   }
+      alert( "I think you might be interested in buying " + array[numberOfSeats] + ".");
 
   }
 
   //Collects rental duration//
   function days () {
    rentalDays = prompt("For how long do you want to rent the car?");
-   while (rentalDays == null || rentalDays.trim() === "" || isNaN(rentalDays) || rentalDays==0) {
-        userAge = prompt("Invalid input. Please enter a valid age.");
+   while (rentalDays == null || rentalDays.trim() === "" || isNaN(rentalDays) || rentalDays<=0) {
+        rentalDays = prompt("Invalid input. Please enter a valid input.");
   }
 }
 
   //Display rental details with cost//
   function details() {
-   alert("So, "+ userName+" have rented " + array[choice] + " for " + rentalDays + " days.\nYour total cost is $" + (rentalDays * choice * 10) + ".");
+    carPrice = rentalDays * numberOfSeats * 10;
+   alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
 }
