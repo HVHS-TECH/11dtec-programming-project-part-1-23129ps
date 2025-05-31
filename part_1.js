@@ -13,6 +13,7 @@ let userName;
 let rentalDays;
 let numberOfSeats;
 let carPrice;
+let insurance;
 
 //functions//
 
@@ -66,6 +67,15 @@ let carPrice;
 
   //Display rental details with cost//
   function details() {
+    insurance = prompt("Do you need insurance coverage for your rental?(yes/no)");
+    if (insurance = yes) {
+       carPrice = rentalDays * numberOfSeats * 10 * 15;
+    }
+    else if (insurance = no){
     carPrice = rentalDays * numberOfSeats * 10;
+    }
+    else {
+      insurance = prompt("Please enter a valid input. (yes/no)");
+    }
    alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
 }
