@@ -77,11 +77,11 @@ function details() {
     let insuranceCost = 0; // Default insurance cost
 
     // Apply insurance cost if the user chooses "yes"
-    if (insurance.toLowerCase() === "yes") {
+    if (insurance === "yes") {
         insuranceCost = rentalDays * 15; // $15 per day
     } else {
         insuranceCost = 0; // No insurance cost
     }
 
-   alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
+   alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour insurance cost is $" + insuranceCost + ".");
 }
