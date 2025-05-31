@@ -25,15 +25,14 @@ let carPrice;
  }
 
  //Greets the user and collects their names//
- function greetUser() {
-    alert("Welcome to Rob’s Rentals!");
-    userName = prompt("What's your name?");
+  function greetUser () {
+   alert("Welcome to Rob’s rentals!");
+   userName = prompt("What's your name?");
     
-    // Validate name input: ensure it contains only letters
-    while (userName == null || userName.trim() === "" || !/^[a-zA-Z]+$/.test(userName)) {
-        userName = prompt("Invalid input. Please enter a name using only letters.");
-    }
-
+    // Validate name input
+    while (userName == null || userName.trim() === "" || !isNaN(userName)) {
+        userName = prompt("Invalid input. Please enter a valid name.");
+  }
 }
  
   //Asks for number of seates needed and suggests a car//
