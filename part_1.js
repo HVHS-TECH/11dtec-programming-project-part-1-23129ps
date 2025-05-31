@@ -79,8 +79,10 @@ function details() {
     // Apply insurance cost if the user chooses "yes"
     if (insurance === "yes") {
         insuranceCost = rentalDays * 15; // $15 per day
+        carPrice= insuranceCost + (numberOfSeats*10);
     } else {
         insuranceCost = 0; // No insurance cost
+        carPrice = numberOfSeats*10;
     }
 
    alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour insurance cost is $" + insuranceCost + ".\nYour total cost is "+ carPrice);
