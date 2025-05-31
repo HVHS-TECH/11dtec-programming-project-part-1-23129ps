@@ -42,7 +42,7 @@ let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", 
   //Collects rental duration//
   function days () {
    rentalDays = prompt("For how long do you want to rent the car?");
-   while (rentalDays == null || rentalDays.trim() === "" || isNaN(rentalDays)) {
+   while (rentalDays == null || rentalDays.trim() === "" || isNaN(rentalDays) || rentalDays==0) {
         userAge = prompt("Invalid input. Please enter a valid age.");
   }
 }
