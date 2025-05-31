@@ -30,8 +30,11 @@ let carPrice;
    userName = prompt("What's your name?");
     
     // Validate name input
-    while (userName == null || userName.trim() === "" || !isNaN(userName)) {
+    while (userName.trim() === "" || !isNaN(userName)) {
         userName = prompt("Invalid input. Please enter a valid name.");
+  }
+  if (useName == null) {
+    return;
   }
 }
  
