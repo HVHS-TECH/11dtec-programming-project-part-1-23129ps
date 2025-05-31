@@ -70,7 +70,7 @@ function details() {
     insurance = prompt("Do you need insurance coverage for your rental? (yes/no)");
 
     // Validate input until the user enters "yes" or "no"
-    while (insurance=== "yes" && insurance=== "no") {
+    while (insurance=== "yes" || insurance=== "no") {
         insurance = prompt("Invalid input. Please enter 'yes' or 'no'.");
     }
 
