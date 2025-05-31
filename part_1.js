@@ -48,10 +48,10 @@ let insurance;
    while (numberOfSeats>9) {
     numberOfSeats = prompt("Sorry, we don't have a car more than 9 seats\nPlease enter a number between 1 to 9.");
    }
-      alert( "I think you might be interested in buying " + array[numberOfSeats] + ".");
-  if (numberOfSeats == null) {
+    if (numberOfSeats == null) {
     return;
   }
+      alert( "I think you might be interested in buying " + array[numberOfSeats] + ".");
   }
 
   //Collects rental duration//
