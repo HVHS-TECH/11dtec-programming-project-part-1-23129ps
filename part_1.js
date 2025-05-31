@@ -31,6 +31,7 @@ let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", 
     while (userName == null || userName.trim() === "" || !isNaN(userName)) {
         userName = prompt("Invalid input. Please enter a valid name.");
   }
+}
  
   //Asks for number of seates needed and suggests a car//
   function car () {
@@ -41,11 +42,12 @@ let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", 
   //Collects rental duration//
   function days () {
    rentalDays = prompt("For how long do you want to rent the car?");
+   while (rentalDays == null || rentalDays.trim() === "" || isNaN(rentalDays)) {
+        userAge = prompt("Invalid input. Please enter a valid age.");
   }
+}
 
   //Display rental details with cost//
   function details() {
    alert("So, "+ userName+" have rented " + array[choice] + " for " + rentalDays + " days.\nYour total cost is $" + (rentalDays * choice * 10) + ".");
 }
- 
- 
