@@ -66,17 +66,22 @@ let insurance;
 }
 
   //Display rental details with cost//
-  function details() {
-    insurance = prompt("Do you need insurance coverage for your rental?(yes/no)");
-    while (insurance === "yes") {
-       carPrice = rentalDays * numberOfSeats * 10 * 15;
-       alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
+function details() {
+    insurance = prompt("Do you need insurance coverage for your rental? (yes/no)");
+
+    // Validate input until the user enters "yes" or "no"
+    while (insurance.toLowerCase() !== "yes" && insurance.toLowerCase() !== "no") {
+        insurance = prompt("Invalid input. Please enter 'yes' or 'no'.");
     }
-    while (insurance === "no"){
-    carPrice = rentalDays * numberOfSeats * 10;
-    alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
+
+    let insuranceCost = 0; // Default insurance cost
+
+    // Apply insurance cost if the user chooses "yes"
+    if (insurance.toLowerCase() === "yes") {
+        insuranceCost = rentalDays * 15; // $15 per day
+    } else {
+        insuranceCost = 0; // No insurance cost
     }
-    else {
-      insurance = prompt("Please enter a valid input. (yes/no)");
-    }
+
+   alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
 }
