@@ -49,7 +49,7 @@ let carPrice;
   
    }
       alert( "I think you might be interested in buying " + array[numberOfSeats] + ".");
- if (numberOfSeats == null) ||(numberOfSeats>9) ){
+ if (numberOfSeats == null) ||(numberOfSeats>9){
     return;
   }
   }
