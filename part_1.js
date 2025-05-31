@@ -43,7 +43,7 @@ let carPrice;
   }
    if (numberOfSeats>9) {
     alert("Sorry, we don't have a car more than 9 seats");
-    return;
+  
    }
       alert( "I think you might be interested in buying " + array[numberOfSeats] + ".");
 
