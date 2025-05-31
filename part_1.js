@@ -68,11 +68,11 @@ let insurance;
   //Display rental details with cost//
   function details() {
     insurance = prompt("Do you need insurance coverage for your rental?(yes/no)");
-    if (insurance = yes) {
+    while (insurance === "yes") {
        carPrice = rentalDays * numberOfSeats * 10 * 15;
        alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
     }
-    else if (insurance = no){
+    while (insurance === "no"){
     carPrice = rentalDays * numberOfSeats * 10;
     alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
     }
