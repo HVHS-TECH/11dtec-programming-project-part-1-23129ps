@@ -70,12 +70,13 @@ let insurance;
     insurance = prompt("Do you need insurance coverage for your rental?(yes/no)");
     if (insurance = yes) {
        carPrice = rentalDays * numberOfSeats * 10 * 15;
+       alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
     }
     else if (insurance = no){
     carPrice = rentalDays * numberOfSeats * 10;
+    alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
     }
     else {
       insurance = prompt("Please enter a valid input. (yes/no)");
     }
-   alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour total cost is $" + carPrice + ".");
 }
