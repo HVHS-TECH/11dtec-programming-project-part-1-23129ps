@@ -27,7 +27,7 @@ let carPrice;
  //Greets the user and collects their names//
  function greetUser() {
     alert("Welcome to Rob’s Rentals!");
-    let userName = prompt("What's your name?");
+    userName = prompt("What's your name?");
     
     // Validate name input: ensure it contains only letters
     while (userName == null || userName.trim() === "" || !/^[a-zA-Z]+$/.test(userName)) {
