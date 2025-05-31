@@ -83,5 +83,5 @@ function details() {
         insuranceCost = 0; // No insurance cost
     }
 
-   alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour insurance cost is $" + insuranceCost + ".");
+   alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour insurance cost is $" + insuranceCost + ".\nYour total cost is "+ carPrice);
 }
