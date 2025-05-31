@@ -45,11 +45,10 @@ let carPrice;
         numberOfSeats = prompt("Invalid input. Please enter a valid input.");
   }
    if (numberOfSeats>9) {
-    alert("Sorry, we don't have a car more than 9 seats");
-  
+    numberOfSeats = prompt("Sorry, we don't have a car more than 9 seats\nPlease enter a number between 1 to 9.");
    }
       alert( "I think you might be interested in buying " + array[numberOfSeats] + ".");
- if (numberOfSeats == null) ||(numberOfSeats>9){
+ if (numberOfSeats == null){
     return;
   }
   }
