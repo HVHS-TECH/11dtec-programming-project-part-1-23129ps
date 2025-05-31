@@ -36,7 +36,11 @@ let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", 
   //Asks for number of seates needed and suggests a car//
   function car () {
   choice = prompt("Hi " + userName + "!\nHow many seats do you need in your car?");
+     while (choice == null || choice.trim() === "" || isNaN(choice) || choice==0) {
+        choice = prompt("Invalid input. Please enter a valid age.");
+  }
       alert( "I think you might be interested in buying " + array[choice] + ".");
+
   }
 
   //Collects rental duration//
