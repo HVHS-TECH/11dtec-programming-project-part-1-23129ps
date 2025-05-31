@@ -33,7 +33,7 @@ let carPrice;
     while (userName.trim() === "" || !isNaN(userName)) {
         userName = prompt("Invalid input. Please enter a valid name.");
   }
-  if (useName == null) {
+  if (userName == null) {
     return;
   }
 }
