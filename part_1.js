@@ -70,7 +70,7 @@ function details() {
     insurance = prompt("Do you need insurance coverage for your rental? (yes/no)");
 
     // Validate input until the user enters "yes" or "no"
-    while (insurance=== "yes" || insurance=== "no") {
+    while (insurance=== "yes" && insurance=== "no") {
         insurance = prompt("Invalid input. Please enter 'yes' or 'no'.");
     }
 
@@ -85,5 +85,5 @@ function details() {
         carPrice = numberOfSeats*10;
     }
 
-   alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour insurance cost is $" + insuranceCost + ".\nYour total cost is "+ carPrice);
+   alert("So, "+ userName+" have rented " + array[numberOfSeats] + " for " + rentalDays + " days.\nYour insurance cost is $" + insuranceCost + ".\nYour total cost is $"+ carPrice);
 }
