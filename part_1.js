@@ -44,7 +44,7 @@ let carPrice;
      while ( numberOfSeats== " " || isNaN(numberOfSeats) || numberOfSeats<=0) {
         numberOfSeats = prompt("Invalid input. Please enter a valid input.");
   }
-   if (numberOfSeats>9) {
+   while (numberOfSeats>9) {
     numberOfSeats = prompt("Sorry, we don't have a car more than 9 seats\nPlease enter a number between 1 to 9.");
    }
       alert( "I think you might be interested in buying " + array[numberOfSeats] + ".");
