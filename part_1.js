@@ -25,7 +25,11 @@ let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", 
  //Greets the user and collects their names//
   function greetUser () {
    alert("Welcome to Rob’s rentals!");
-   userName = prompt("Before we start, can you please enter your name?");
+   userName = prompt("What's your name?");
+    
+    // Validate name input
+    while (userName == null || userName.trim() === "" || !isNaN(userName)) {
+        userName = prompt("Invalid input. Please enter a valid name.");
   }
  
   //Asks for number of seates needed and suggests a car//
