@@ -66,7 +66,7 @@ function car () {
   }
 
   alert("I think you might be interested in renting " + array[numberOfSeats] + ".");
-  return numberOfSeats;
+ 
 }
 
 
