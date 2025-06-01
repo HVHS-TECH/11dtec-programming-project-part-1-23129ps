@@ -1,37 +1,57 @@
-/*******************
-  Part 1 Project CSS 
-   Author: Priya Silwal
-   Date: 19/05/2025
-*******************/
-
-/* General Styles */
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
 }
 
 /* Heading */
 h1 {
-    color: #333;
+  background-color: #0073e6;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 2em;
 }
 
-/* Button */
+/* Paragraph */
+p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.5;
+}
+
+/* Button styling */
 button {
-    background-color: #007bff;
-    font-size: 20px;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #ff8800;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #e07000;
 }
 
-
+/* Responsive design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+  p {
+    font-size: 1em;
+  }
+  button {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+}
