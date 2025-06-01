@@ -49,10 +49,6 @@ function start() {
 function car() {
   let userName = "User"; // Assuming you have a username variable
   let numberOfSeats = prompt("Hi " + userName + "!\nHow many seats do you need in your car?");
-  
-  if (numberOfSeats === null) {
-    return; // Stop execution if user cancels
-  }
 
   while (numberOfSeats.trim() === "" || isNaN(numberOfSeats) || numberOfSeats <= 0) {
     numberOfSeats = prompt("Invalid input. Please enter a valid input.\nPlease enter a number between 1 to 9.");
