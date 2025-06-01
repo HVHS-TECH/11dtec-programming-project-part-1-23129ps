@@ -46,28 +46,20 @@ function start() {
 }
  
   //Asks for number of seates needed and suggests a car//
-function car() {
-  let userName = "User"; // Assuming you have a username variable
-  let numberOfSeats = prompt("Hi " + userName + "!\nHow many seats do you need in your car?");
-
-  while (numberOfSeats.trim() === "" || isNaN(numberOfSeats) || numberOfSeats <= 0) {
-    numberOfSeats = prompt("Invalid input. Please enter a valid input.\nPlease enter a number between 1 to 9.");
-    
-    if (numberOfSeats === null) {
-      return; // Stop execution if user cancels
-    }
+  function car () {
+  numberOfSeats = prompt("Hi " + userName + "!\nHow many seats do you need in your car?");
+     while ( numberOfSeats== " " || isNaN(numberOfSeats) || numberOfSeats<=0) {
+        numberOfSeats = prompt("Invalid input. Please enter a valid input.\nPlease enter a number between 1 to 9.");
   }
-
-  while (numberOfSeats > 9) {
+   while (numberOfSeats>9) {
     numberOfSeats = prompt("Sorry, we don't have a car more than 9 seats\nPlease enter a number between 1 to 9.");
-    
-    if (numberOfSeats === null) {
-      return; // Stop execution if user cancels
-    }
+   }
+      alert( "I think you might be interested in buying " + array[numberOfSeats] + ".");
+ if (numberOfSeats == null){
+    return;
+  }
   }
 
-  alert("I think you might be interested in buying " + array[numberOfSeats] + ".");
-}
 
 
   //Collects rental duration//
