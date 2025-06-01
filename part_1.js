@@ -18,12 +18,18 @@ let insurance;
 //functions//
 
 //Starts the rental process//
- function start () {
-   greetUser();
-    car();
-    days();
+function start() {
+    greetUser();
+    if (userName === null) return; // Stop if user cancels
+
+    numberOfSeats = car();
+    if (numberOfSeats === null) return; // Stop if user cancels
+
+    rentalDays = days();
+    if (rentalDays === null) return; // Stop if user cancels
+
     details();
- }
+}
 
  //Greets the user and collects their names//
   function greetUser () {
