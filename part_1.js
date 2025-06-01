@@ -80,6 +80,7 @@ function car () {
    if (rentalDays == null) {
     return;
   }
+  return rentalDays;
 }
 
   //Display rental details with cost//
