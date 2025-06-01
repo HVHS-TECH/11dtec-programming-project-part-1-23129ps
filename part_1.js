@@ -42,18 +42,19 @@ let insurance;
   //Asks for number of seates needed and suggests a car//
   function car () {
   numberOfSeats = prompt("Hi " + userName + "!\nHow many seats do you need in your car?");
+      if (numberOfSeats == null) {
+    return;
+  }
      while ( numberOfSeats== " " || isNaN(numberOfSeats) || numberOfSeats<=0 || numberOfSeats == "") {
         numberOfSeats = prompt("Invalid input. Please enter a valid input.\nPlease enter a number between 1 to 9.");
   }
 
-      if (numberOfSeats == null) {
-    return;
-  }
-
    while (numberOfSeats>9) {
-    numberOfSeats = prompt("Sorry, we don't have a car more than 9 seats\nPlease enter a number between 1 to 9.");
         if (numberOfSeats == null) {
     return;
+  }
+    numberOfSeats = prompt("Sorry, we don't have a car more than 9 seats\nPlease enter a number between 1 to 9.");
+      
   }
    }
       alert( "I think you might be interested in buying " + array[numberOfSeats] + ".");
