@@ -26,7 +26,7 @@ function start() {
     if (numberOfSeats === null) return; // Stop if user cancels
 
     rentalDays = days();
-    if (rentalDays === null) return; // Stop if user cancels
+     // Stop if user cancels
 
     details();
 }
