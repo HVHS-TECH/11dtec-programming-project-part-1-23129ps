@@ -31,18 +31,23 @@ let array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", 
   function greetUser () {
    alert("Welcome to Rob’s rentals!");
    userName = prompt("Before we start, can you please enter your name?");
+     while (userName === "" || !isNaN(userName)) {
+        userName = prompt("Invalid input. Please enter a valid name.");
+  }
   }
  
   //Asks for number of seates needed and suggests a car//
   function car () {
   choice = prompt("Hi " + userName + "!\nHow many seats do you need in your car?");
       alert( "I think you might be interested in buying " + array[choice] + ".");
+      
   }
 
 
   //Collects rental duration//
   function days () {
    rentalDays = prompt("For how long do you want to rent the car?");
+   
   }
 
 
