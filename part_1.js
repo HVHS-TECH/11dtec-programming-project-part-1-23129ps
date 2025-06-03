@@ -60,5 +60,6 @@ function seats () {
    while (rentalDays === "" || isNaN(rentalDays) || rentalDays<=0) {
         rentalDays = prompt("Invalid input. Please enter a valid input.");
   }
+  console.log(userName + numberOfSeats + rentalDays); 
 }
- alert(userName + numberOfSeats + rentalDays);  
+  
