@@ -7,7 +7,7 @@ Purpose: Part 1 project
 *******************/
 
 // Variables //
-const array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry", "Honda CR-V", "Chevrolet Suburban", "Mercedes-Benz Sprinter", "Ford Transit", "Toyota HiAce"];
+const array = ["N/A", "Solo Hoverpod", "Smart Car", "Mazda RX-8", "Toyota Camry"];
 
 let userName;
 let rentalDays;
